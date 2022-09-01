@@ -1,0 +1,27 @@
+### Index
+GET http://localhost:3000/cars.json
+
+### Show
+GET http://localhost:3000/cars/1.json
+
+### Create
+POST http://localhost:3000/cars.json
+Content-Type: application/json
+
+{
+  "make": "Hyundai",
+  "model": "Senota",
+  "year": 2007,
+  "type_of_car": "sedan"
+}
+
+### Update
+PATCH  http://localhost:3000/cars/6.json
+Content-Type: application/json
+
+{
+  "make": "Hyundai"
+}
+
+### Delete
+DELETE http://localhost:3000/cars/5.json
