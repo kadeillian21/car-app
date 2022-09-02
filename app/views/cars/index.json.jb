@@ -1,0 +1,9 @@
+@cars.map do |car|
+  {
+    make: car.make,
+    model: car.model,
+    year: car.year,
+    type_of_car: car.type_of_car,
+    id: car.id,
+  }
+end
