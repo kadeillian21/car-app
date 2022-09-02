@@ -24,10 +24,13 @@ class CarsController < ApplicationController
 
   def update
     car = Car.find_by(id: params["id"])
+
     car.make = params["make"] || car.make
     car.model = params["model"] || car.model
     car.year = params["year"] || car.year
     car.type_of_car = params["type_of_car"] || car.type_of_car
+
+    render json: car.as_json
   end
 
   def destroy

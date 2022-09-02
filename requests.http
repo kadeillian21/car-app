@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### Update
-PATCH  http://localhost:3000/cars/6.json
+PATCH http://localhost:3000/cars/6.json
 Content-Type: application/json
 
 {
-  "make": "Hyundai"
+  "make": "Subaru"
 }
 
 ### Delete
